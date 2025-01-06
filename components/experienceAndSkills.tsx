@@ -53,8 +53,11 @@ export default function ExperienceAnSkill() {
         </p>
 
         <article className=' flex gap-[24px] items-center mt-[24px] gap-[10px] py-[24px]  flex-wrap'>
-          {skills.map((skill: string) => (
-            <div className='bg-custom-gradient rounded-[20px]  py-[16px] px-[32px] flex justify-center items-center w-[344px]'>
+          {skills.map((skill: string, index) => (
+            <div
+              className='bg-custom-gradient rounded-[20px]  py-[16px] px-[32px] flex justify-center items-center w-[344px]'
+              key={index}
+            >
               {skill}
             </div>
           ))}

@@ -3,7 +3,7 @@ import React from 'react'
 interface Props {
   text: string
   loading?: boolean
-  onClick?: (e: any) => void
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
   type?: 'orange_filled' | 'white_border' | 'green_border'
   className?: string
   iconRight?: React.ReactNode | null
@@ -20,7 +20,7 @@ export default function Button({
   const orangeFilledClassName =
     'bg-[#D7610D] text-[white] hover:bg-[white] hover:text-[#D7610D] transition duration-300 ease-in-out'
   const whiteborderClassName =
-    'bg-transparent border-[1px] border-[white] text-[white] hover:bg-[white] hover:text-[#D7610D] transition duration-3000 linear'
+    'bg-transparent border-[1px] border-[white] text-[white] hover:bg-[white] hover:text-[#D7610D] transition duration-300 linear'
 
   const greenBorderClassName =
     'bg-[transparent] text-[#17D70D] border-[1px] border-[#17D70D] '

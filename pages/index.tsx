@@ -1,4 +1,3 @@
-import Navbar from '@/components/utils/navbar'
 import MyMarquee from '@/components/utils/marquee'
 import HomePageHero from '@/components/hero/homePageHero'
 import SocialsAndContactUs from '@/components/socialsAndContactUs'
