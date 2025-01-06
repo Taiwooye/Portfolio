@@ -105,7 +105,12 @@ export default function Navbar() {
           <Link href='/about-me' className='text-[#FFF] font-[400] text-[16px]'>
             About Me
           </Link>
-          {!pathName.includes('/about-me') && <a href='#projects'>Projects</a>}
+          <Link
+            href='/#projects'
+            className='hover:text-[#D7610D]  transition-all duration-500'
+          >
+            Projects
+          </Link>
           <Button
             type='orange_filled'
             text='Contact Me'
