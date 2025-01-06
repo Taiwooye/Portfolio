@@ -17,7 +17,10 @@ export default function ExperienceAnSkill() {
       {/* About Me */}
       <main>
         {aboutme.map((experience: Experience, index: number) => (
-          <article key={index} className='relative   gap-[10px] py-[24px] '>
+          <article
+            key={index}
+            className='relative   gap-[10px] py-[24px] group '
+          >
             <div className='flex justify-between  gap-[10px] py-[24px] '>
               {/* Content */}
               <div className='w-[50%]'>

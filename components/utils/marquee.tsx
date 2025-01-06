@@ -6,15 +6,15 @@ const myList = [
   { title: 'Javascript', image: '/images/javascript.png' },
   { title: 'Next.js', image: '/images/nextj.webp' },
   { title: 'React', image: '/images/react.png' },
-  { title: 'Tailwind', image: '/images/tailwind.png' },
-  { title: 'TypeScript', image: '/images/typescript.jpeg' },
-  { title: 'Boostrap', image: '/images/boostrap.png' },
+  { title: 'Tailwind', image: '/images/tailwind.svg' },
+  { title: 'TypeScript', image: '/images/typescript.jpg' },
+  { title: 'Boostrap', image: '/images/bootstrap.png' },
 ]
 
 export default function MyMarquee() {
   return (
     <>
-      <main className='flex justify-center w-full p-[10px] mb-[40px]'>
+      <main className='flex justify-center w-full p-[10px] my-[40px]'>
         <div>
           <h3 className='text-[22px] md:text-[40px] text-center text-white font-[600]'>
             Tools and Technologies I&apos;ve Mastered
@@ -33,16 +33,18 @@ export default function MyMarquee() {
           {myList.map((item, index) => (
             <div
               key={index}
-              className='flex items-center bg-[#262626] gap-[16px] w-[328px] h-[150px] p-[20px]  rounded-[10px] bg-custom-gradient'
+              className='flex items-center  gap-[40px] w-[328px]  p-[20px]  rounded-[10px] bg-custom-gradient'
             >
-              <Image
-                className='w-full object-cover justify-center items-center w-[100px] h-[80px]'
-                width={600}
-                height={400}
-                src={item.image}
-                alt={item.title}
-                priority
-              />
+              <div className=' w-[150px] h-[150px]  '>
+                <Image
+                  className='w-full h-full object-contain'
+                  width={600}
+                  height={400}
+                  src={item.image}
+                  alt={item.title}
+                  priority
+                />
+              </div>
               <span className='text-[40px] font-[400] text-[#FFF]'>
                 {item.title}
               </span>

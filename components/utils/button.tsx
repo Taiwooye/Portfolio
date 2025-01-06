@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 interface Props {
   text: string
@@ -17,10 +17,11 @@ export default function Button({
   iconRight,
   ...props
 }: Props) {
+  const [showIcon, setShowIcon] = useState<boolean>(false)
   const orangeFilledClassName =
-    'bg-[#D7610D] text-[white] hover:bg-[white] hover:text-[#D7610D] transition duration-300 ease-in-out'
+    'bg-[#D7610D] text-[white] hover:bg-[white] hover:text-[#D7610D] transition duration-300 '
   const whiteborderClassName =
-    'bg-transparent border-[1px] border-[white] text-[white] hover:bg-[white] hover:text-[#D7610D] transition duration-300 linear'
+    'bg-transparent border-[1px] border-[white] text-[white] hover:bg-[white] hover:text-[#D7610D] transition duration-300'
 
   const greenBorderClassName =
     'bg-[transparent] text-[#17D70D] border-[1px] border-[#17D70D] '
@@ -38,8 +39,10 @@ export default function Button({
       className={`${buttonClassName} w-[fit-content] josephine px-[24px] py-[8px] rounded-[20px] flex justify-center gap-[8px] text-[16px] ${className}`}
       {...props}
       onClick={onClick}
+      onMouseEnter={() => setShowIcon(true)}
+      onMouseLeave={() => setShowIcon(false)}
     >
-      {text} {iconRight}
+      {text} {showIcon && iconRight}
     </button>
   )
 }

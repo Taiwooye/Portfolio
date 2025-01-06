@@ -2,6 +2,10 @@ import Link from 'next/link'
 import Button from './utils/button'
 import { social } from './utils/social'
 import { ReactNode } from 'react'
+import ArrowUp from '@/icons/arrowUp'
+import Copy from '@/icons/copy'
+import { toast } from 'react-toastify'
+import { handleDownloadResume } from './utils/resumeDownload'
 
 type Social = {
   icon: () => ReactNode
@@ -9,6 +13,11 @@ type Social = {
 }
 
 export default function SocialsAndContactUs() {
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText('+2348069468293')
+    toast.success('Link copied to clipboard!')
+  }
+
   return (
     <section
       id='contact'
@@ -27,8 +36,18 @@ export default function SocialsAndContactUs() {
 
       {/* Buttons */}
       <main className='mt-[48px] flex flex-wrap justify-center gap-[24px]'>
-        <Button type='white_border' text='My Resume' />
-        <Button type='white_border' text='+2348069468293' />
+        <Button
+          type='white_border'
+          text='My Resume'
+          iconRight={<ArrowUp />}
+          onClick={handleDownloadResume}
+        />
+        <Button
+          type='white_border'
+          text='+2348069468293'
+          iconRight={<Copy />}
+          onClick={copyToClipboard}
+        />
       </main>
 
       {/* Social Links */}

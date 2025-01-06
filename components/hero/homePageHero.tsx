@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from '../utils/button'
 import Navbar from '../utils/navbar'
+import ArrowUp from '@/icons/arrowUp'
+import { handleDownloadResume } from '../utils/resumeDownload'
 
 export default function HomePageHero() {
   return (
@@ -26,7 +28,12 @@ export default function HomePageHero() {
           </p>
         </div>
         <div className='flex gap-[24px] items-center p-[24px]'>
-          <Button type='white_border' text='My Resume' />
+          <Button
+            type='white_border'
+            text='My Resume'
+            iconRight={<ArrowUp />}
+            onClick={handleDownloadResume}
+          />
         </div>
       </div>
     </section>

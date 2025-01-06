@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useState, useEffect, useRef } from 'react'
 import Button from './button'
 import { useRouter } from 'next/router'
+import ArrowUp from '@/icons/arrowUp'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -51,12 +52,24 @@ export default function Navbar() {
 
       {/* Right side menu and button */}
       <div className='flex items-center gap-[32px] josephine hidden text-[#FFF] text-[16px] md:flex'>
-        <Link href='/about-me'>About Me</Link>
-        {!pathName.includes('/about-me') && <a href='#projects'>Projects</a>}
+        <Link
+          href='/about-me'
+          className='hover:text-[#D7610D] transition-all duration-500'
+        >
+          About Me
+        </Link>
+        <Link
+          href='/#projects'
+          className='hover:text-[#D7610D]  transition-all duration-500'
+        >
+          Projects
+        </Link>
+        {/* {!pathName.includes('/about-me') && <a href='#projects'>Projects</a>} */}
         <Button
           type='orange_filled'
           text='Contact Me'
           onClick={() => router.push(`${pathName}#contact`)}
+          iconRight={<ArrowUp />}
         />
       </div>
 
@@ -96,7 +109,7 @@ export default function Navbar() {
           <Button
             type='orange_filled'
             text='Contact Me'
-            onClick={() => router.push(`${pathName}#contact`)}
+            onClick={() => router.push(`/${pathName}#contact`)}
           />
         </div>
       )}
