@@ -1,3 +1,11 @@
+import ExperienceAnSkill from '@/components/experienceAndSkills'
+import SocialsAndcontactUs from '@/components/socialsAndContactUs'
+
 export default function AboutMe() {
-  return <div>about me</div>
+  return (
+    <>
+      <ExperienceAnSkill />
+      <SocialsAndcontactUs />
+    </>
+  )
 }

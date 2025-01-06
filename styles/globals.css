@@ -5,5 +5,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Bricolage+Grotesque';
+  font-family: 'Bricolage Grotesque';
+  background-color: #130801;
+  color: white;
 }

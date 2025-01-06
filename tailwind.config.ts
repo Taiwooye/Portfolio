@@ -11,6 +11,10 @@ export default {
       fontFamily: {
         bricolage: ['Bricolage+Grotesque', 'sans-serif'],
       },
+      backgroundImage: {
+        'custom-gradient':
+          '  linear-gradient(180deg, rgba(255, 255, 255, 0.26) 0%, rgba(255, 255, 255, 0) 100%)',
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
