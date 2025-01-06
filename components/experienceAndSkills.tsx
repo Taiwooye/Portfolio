@@ -26,7 +26,7 @@ export default function ExperienceAnSkill() {
               <h4 className='text-[20px] md:text-[24px] font-[600]'>
                 {experience.role} at {experience.company}
               </h4>
-              <p className='text-[16px] font-[400] mt-[16px]'>
+              <p className='text-[16px] font-[400] mt-[16px] josephine'>
                 {experience.description}
               </p>
             </div>
