@@ -6,7 +6,7 @@ export default function HomePageHero() {
   return (
     <section className='bg-[rgba(16, 14, 14, 0.20)] py-[30px]'>
       <Navbar />
-      <div className='mx-auto max-w-[866px] flex flex-col items-center gp-[24px]  py-[50px] md:py-[100px] '>
+      <div className='mx-auto max-w-[866px] flex flex-col items-center gp-[24px]  py-[50px]  '>
         <Button type='green_border' text='Available for work' />
 
         <div className='p-[10px]'>
@@ -16,7 +16,7 @@ export default function HomePageHero() {
           <p className='text-center text-[16px] josephine  '>
             I’m{' '}
             <span className='text-[#D7610D] text-[12px] font-[700] text-[16px]'>
-              NAME
+              Oduwaye Emeka
             </span>
             , a frontend developer with a passion for crafting digital
             experiences that leave a mark. Is there anything too hard for me to
@@ -26,7 +26,6 @@ export default function HomePageHero() {
           </p>
         </div>
         <div className='flex gap-[24px] items-center p-[24px]'>
-          <Button type='orange_filled' text='Contact Me' />
           <Button type='white_border' text='My Resume' />
         </div>
       </div>

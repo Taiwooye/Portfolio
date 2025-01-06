@@ -10,7 +10,10 @@ type Social = {
 
 export default function SocialsAndContactUs() {
   return (
-    <section className='max-w-[1440px] m-auto p-[10px] lg:p-[0px] mt-[20px] md:mt-[48px]'>
+    <section
+      id='contact'
+      className='max-w-[1440px] m-auto p-[10px] lg:p-[0px] mt-[20px] md:mt-[48px]'
+    >
       {/* Heading */}
       <h2 className='text-center md:text-[40px] text-[22px] font-[600]'>
         Let’s Build Something Together
@@ -24,7 +27,6 @@ export default function SocialsAndContactUs() {
 
       {/* Buttons */}
       <main className='mt-[48px] flex flex-wrap justify-center gap-[24px]'>
-        <Button type='orange_filled' text='Contact Me' />
         <Button type='white_border' text='My Resume' />
         <Button type='white_border' text='+2348069468293' />
       </main>
@@ -47,6 +49,15 @@ export default function SocialsAndContactUs() {
           </Link>
         ))}
       </main>
+
+      <div>
+        <p className='mt-[20px] josephine text-[16px] font-[500] text-center'>
+          Last updated: 10th November, 2024.
+        </p>
+        <p className='mt-[20px] josephine text-[16px] font-[500] text-center'>
+          © 2023 Oduwaye Emeka. All Rights Reserved.
+        </p>
+      </div>
     </section>
   )
 }
