@@ -1,6 +1,5 @@
 import React from "react";
 import { useRouter } from "next/router";
-import ArrowUp from "@/icons/arrowUp";
 import ArrowWhite from "@/icons/ArrowWhite";
 import Image from "next/image";
 
@@ -62,6 +61,7 @@ export default function Projects() {
                 alt={`${project.title} thumbnail`}
                 width={600}
                 height={400}
+                priority
                 className="h-full w-full object-cover rounded-md"
               />
             </div>
