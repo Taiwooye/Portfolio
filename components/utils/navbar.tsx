@@ -32,7 +32,14 @@ export default function Navbar() {
   }, [isMenuOpen])
 
   return (
-    <nav className='relative flex mx-auto max-w-[1440px] px-[48px] py-[12px] justify-between items-center bg-custom-gradient rounded-[66px] sticky top-0 z-[3000]'>
+    <nav
+    style={{
+      background: 
+        'url("/images/Rectangle.png") center/cover, linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%)',
+      backdropFilter: 'blur(25px)',
+      borderRadius: '66px',
+    }}
+    className='relative flex mx-auto max-w-[1440px] px-[48px] py-[12px] justify-between items-center bg-custom-gradient rounded-[66px] sticky top-0 z-[3000]'>
       {/* Left side with logo and user name */}
       <Link href={'/'} className='flex items-center gap-[10px] md:gap-[16px] '>
         <div className='w-[40px] h-[40px] overflow-clip rounded-[30px]'>
