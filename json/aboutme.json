@@ -1,26 +1,20 @@
 [
   {
-    "role": "Full-stack Engineer ",
-    "company": "Tranq-bay-Health, Berlin, Germany ",
-    "duration": "Oct. 2023 - Present",
-    "description": "Actively contributed to the adoption of best practices in front-end development, including code reviews, testing, and documentation.  Implementing Jest for unit testing and Cypress for end-to-end testing, ensuring the robustness and reliability of the application. Participating in the planning and design meetings to contribute to the development process of the web application.  Leveraged proficiency in TailWind CSS and NextJS to create dynamic and interactive web solutions. Integrated Redux, a powerful state management tool, to optimise the management of application state and enhance user experiences. Utilised my expertise in Nest.js and TypeORM to craft dynamic and interactive back-end solutions within micro services architecture.Impslemented event-driven services to enhance system responsiveness and scalability, ensuring the efficient operation of the backend infrastructure."
-  },
-  {
     "role": "Frontend Developer",
-    "company": "Cyberbuddies, Nigeria   ",
-    "duration": "Jan. 2023 - July. 2023",
-    "description": "Actively contributed to the adoption of best practices in front-end development, including code reviews, testing, and documentation. Participating in the planning and design meetings to contribute to the development process of web applications, including World Xplorer and Havens Project. Leveraged proficiency in HTML, CSS, JavaScript, and ReactJS to create dynamic and interactive web solutions. "
+    "company": "Tranqbay-Health, Berlin, Germany ",
+    "duration": "Sep. 2023 - Present",
+    "description": "Actively contributed to the adoption of best practices in front-end development, including code reviews, testing, and documentation.  Implementing Jest for unit testing and Cypress for end-to-end testing, ensuring the robustness and reliability of the application. Participating in the planning and design meetings to contribute to the development process of the web application.  Leveraged proficiency in TailWind CSS and NextJS to create dynamic and interactive web solutions. Integrated Redux, a powerful state management tool, to optimise the management of application state and enhance user experiences. Utilised my expertise in Nest.js and TypeORM to craft dynamic and interactive back-end solutions within micro services architecture.Implemented event-driven services to enhance system responsiveness and scalability, ensuring the efficient operation of the backend infrastructure."
   },
   {
-    "role": "Junior Software Enginner",
+    "role": "Software Engineer (Intern)",
+    "company": "Cambridge Computer Academy, Nigeria   ",
+    "duration": "July. 2022 - July. 2023",
+      "description": "Assisted in the initial planning stages of projects by identifying user requirements and translating them into technical specs, improving project clarity. Provided in-depth assistance to students, enhancing their understanding of complex software engineering concepts, leading to a 30% increase in course completion rates. Reviewed student projects to ensure adherence to industry standards, fostering a culture of quality. Engaged in the full lifecycle of several applications, contributing to a 20% reduction in development time through optimized data flow and UI enhancements."
+  },  
+  {
+    "role": "Front-end Engineer (Intern)",
     "company": "SQI College of ICT, Nigeria  ",
-    "duration": "Jan. 2022 - Dec. 2022",
+    "duration": "Sep. 2021 - May. 2022",
     "description": "Learning new technologies and programming languages as needed. Participating in the planning and design meetings to contribute to the development process of web applications. Providing learning support to students of the ongoing software engineering cohort.  "
-  },
-  {
-    "role": "Front-end Engineer (Intern) ",
-    "company": "BOW Dynamics ",
-    "duration": "Jan. 2020 - Nov. 2021",
-    "description": "Participated in the planning and design meetings to contribute to the development process of web applications. Analysed UI/UX designs, turned design pages and specific components into HTML, CSS, and JavaScript.  "
   }
 ]

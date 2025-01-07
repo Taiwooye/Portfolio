@@ -17,8 +17,8 @@ export default function HomePageHero() {
           </h1>
           <p className='text-center text-[16px] josephine  '>
             I’m{' '}
-            <span className='text-[#D7610D] text-[12px] font-[700] text-[16px]'>
-              Oduwaye Emeka
+            <span className='text-[#D7610D] text-[12px] font-[700] md:text-[16px]'>
+              Oyedokun Taiwo
             </span>
             , a frontend developer with a passion for crafting digital
             experiences that leave a mark. Is there anything too hard for me to

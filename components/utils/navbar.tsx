@@ -35,18 +35,18 @@ export default function Navbar() {
     <nav className='relative flex mx-auto max-w-[1440px] px-[48px] py-[12px] justify-between items-center bg-custom-gradient rounded-[66px] sticky top-0 z-[3000]'>
       {/* Left side with logo and user name */}
       <Link href={'/'} className='flex items-center gap-[10px] md:gap-[16px] '>
-        <div className='w-[40px] h-[40px] overflow-clip '>
+        <div className='w-[40px] h-[40px] overflow-clip rounded-[30px]'>
           <Image
-            className='w-full object-cover'
+            className='w-full object-cover '
             width={100}
             height={100}
-            src={'/images/individual.png'}
+            src={'/images/Taiwo.jpg'}
             alt={'gradient'}
             priority
           />
         </div>
         <span className='text-[#FFF] text-[16px] md:text-[20px] font-[400]'>
-          Oduwaye Emeka
+         Oyedokun Taiwo
         </span>
       </Link>
 

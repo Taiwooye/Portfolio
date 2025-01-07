@@ -14,7 +14,7 @@ type Social = {
 
 export default function SocialsAndContactUs() {
   const copyToClipboard = () => {
-    navigator.clipboard.writeText('+2348069468293')
+    navigator.clipboard.writeText('+2347065868215')
     toast.success('Link copied to clipboard!')
   }
 
@@ -44,7 +44,7 @@ export default function SocialsAndContactUs() {
         />
         <Button
           type='white_border'
-          text='+2348069468293'
+          text='+2347065868215'
           iconRight={<Copy />}
           onClick={copyToClipboard}
         />
@@ -74,7 +74,7 @@ export default function SocialsAndContactUs() {
           Last updated: 10th November, 2024.
         </p>
         <p className='mt-[20px] josephine text-[16px] font-[500] text-center'>
-          © 2023 Oduwaye Emeka. All Rights Reserved.
+          © 2023 Oyedokun Taiwo. All Rights Reserved.
         </p>
       </div>
     </section>
