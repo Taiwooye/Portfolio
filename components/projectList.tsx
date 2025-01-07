@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import ArrowUp from "@/icons/arrowUp";
 import ArrowWhite from "@/icons/ArrowWhite";
+import Image from "next/image";
 
 interface Project {
   title: string;
@@ -56,9 +57,11 @@ export default function Projects() {
               <span className="text-gray-500 flex"><span className="w-[24px] h-[24px] rounded-full bg-[#5C534D] items-center flex justify-center"><ArrowWhite/></span></span>
             </div>
             <div className="bg-gray-600 h-48 rounded-md flex items-center justify-center mt-4">
-              <img
+              <Image
                 src={project.thumbnail}
                 alt={`${project.title} thumbnail`}
+                width={600}
+                height={400}
                 className="h-full w-full object-cover rounded-md"
               />
             </div>
